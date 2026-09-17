@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Central.chat test demo app",
+    "slug": "centralchat-example",
+    "version": "0.2.1",
+    "android": {
+      "package": "chat.central.widget.rnexample",
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "chat.central.widget.rnexample",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Record a voice message in the chat.",
+        "NSCameraUsageDescription": "Take a photo to send in the chat.",
+        "NSPhotoLibraryUsageDescription": "Choose a photo to send in the chat.",
+        "NSLocationWhenInUseUsageDescription": "Share where you are in the chat."
+      }
+    },
+    "plugins": [
+      "./plugins/withCameraQueries"
+    ]
+  }
+}
