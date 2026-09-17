@@ -1,0 +1,42 @@
+{
+  "name": "@centralchat/react-native-widget",
+  "version": "0.2.3",
+  "description": "The Central chat in a React Native app \u2014 three calls and one component, over the same page the web embed loads.",
+  "license": "Apache-2.0",
+  "//main": "Shipped as TypeScript source rather than a build output. Metro already transpiles node_modules with the React Native babel preset, so there is nothing a prebuilt lib/ would add except a second artifact to keep in step \u2014 and a stack trace that points at code you cannot read.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "//peerDependencies": "react-native-webview is the ONLY one, and it is the reason this package has no native code of its own: no pods, no autolinking, and it runs in Expo Go.",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.72",
+    "react-native-webview": ">=13"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "react-native": "0.76.5",
+    "react-native-webview": "^13.12.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "react-native",
+    "chat",
+    "central",
+    "e2ee",
+    "customer-support"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://central.chat"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "centralchat-example",
+  "version": "0.2.2",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "@centralchat/react-native-widget": "^0.2.2",
+    "expo": "^57.0.23",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-webview": "13.16.1"
+  }
+}
